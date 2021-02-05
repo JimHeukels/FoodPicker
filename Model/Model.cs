@@ -8,6 +8,7 @@ namespace foodPicker.Model
     {
         public int Id { get; set; }
         public string IngredientNaam { get; set; }
+
     }
     public class DB_Recept
     {

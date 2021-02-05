@@ -1,6 +1,7 @@
 ﻿using foodPicker.Model;
 using foodPicker.Services;
 using System;
+using foodPicker.extensions;
 
 namespace foodPicker
 {
@@ -15,7 +16,11 @@ namespace foodPicker
 
             var x = new ReceptenService();
 
-            var y = x.GetRecepten();
+            var y = x.GetRandomRecepten(7);
+            foreach(var rec in y)
+            {
+                rec.Represent();
+            }
 
         }
     }
