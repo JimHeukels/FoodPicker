@@ -25,6 +25,8 @@ namespace foodPicker
                 rec.Represent();
             }
 
+            Console.WriteLine("Branch test");
+
             voorbeeld = 600;
         }
     }
