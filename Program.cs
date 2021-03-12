@@ -1,7 +1,8 @@
 ﻿using foodPicker.Model;
-using foodPicker.Services;
+
 using System;
 using foodPicker.extensions;
+using foodPicker.Services;
 
 namespace foodPicker
 {
@@ -16,15 +17,20 @@ namespace foodPicker
 
             var x = new ReceptenService();
 
+            int voorbeeld = 5;
+
             var y = x.GetRandomRecepten(7);
-            foreach(var rec in y)
+            foreach (var rec in y)
             {
                 rec.Represent();
             }
 
+            voorbeeld = 600;
         }
     }
 }
+
+
 
 //TODO
 //  1) ReceptenKiezen:
